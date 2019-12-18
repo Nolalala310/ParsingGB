@@ -1,3 +1,4 @@
+#Посмотреть документацию к API Гитхаба. Разобраться и вывести список всех репозиториев для конкретного пользователя.
 import requests
 import json
 username = 'Nolalala310'
@@ -9,7 +10,7 @@ if req.ok:
     list = []
     for i in data:
         list.append(i['name'])
-    print(f'Названия репозиториев пользователя: {list}')
+    print(f'Список репозиториев пользователя: {list}')
 
 
 
